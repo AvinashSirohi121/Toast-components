@@ -1,0 +1,56 @@
+
+.toast-btns{
+    display: flex;
+    gap:1rem;
+    height: 40px;
+
+}
+.toast{
+    background-color: green;
+    color: white;
+    height: 30px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    animation: slide 1s 1;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(1500px);
+    }
+    100%{
+        transform: translateX(0px)
+    }
+}
+
+.success{
+    background-color: rgb(65, 215, 65);
+}
+.info{
+    background-color: rgb(41, 134, 228);
+}
+.alert{
+    background-color: rgb(249, 227, 28);
+}
+.failure{
+    background-color: rgb(252, 75, 75);
+}
+
+.close-toast{
+    cursor: pointer;
+}
+.toast-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+
+}
